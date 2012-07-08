@@ -101,18 +101,8 @@ public class BiomeDecorationsMap implements Map
         return Collections.unmodifiableCollection(this.map.values());
     }
 
-    public Object remove(Object var1)
-    {
-        return this.remove(var1);
-    }
-
     public Object put(Object var1, Object var2)
     {
         return this.put((BiomeBase)var1, (Collection)var2);
-    }
-
-    public Object get(Object var1)
-    {
-        return this.get(var1);
     }
 }

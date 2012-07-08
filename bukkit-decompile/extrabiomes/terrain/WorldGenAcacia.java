@@ -86,7 +86,7 @@ public class WorldGenAcacia extends WorldGenerator
 
                             if ((Math.abs(var14) != var12 || Math.abs(var16) != var12 || var2.nextInt(2) != 0 && var11 != 0) && (var17 == null || var17.canBeReplacedByLeaves(var1, var13, var10, var15)))
                             {
-                                this.setTypeAndData(var1, var13, var10, var15, TerrainGenManager.blockAcaciaLeaves.id, TerrainGenManager.metaAcaciaLeaves);
+                                this.setTypeAndData((org.bukkit.BlockChangeDelegate)var1, var13, var10, var15, TerrainGenManager.blockAcaciaLeaves.id, TerrainGenManager.metaAcaciaLeaves);
                             }
                         }
                     }
@@ -98,7 +98,7 @@ public class WorldGenAcacia extends WorldGenerator
 
                     if (Block.byId[var11] == null || Block.byId[var11].isLeaves(var1, var3, var4 + var10, var5))
                     {
-                        this.setTypeAndData(var1, var3, var4 + var10, var5, TerrainGenManager.blockAcaciaWood.id, TerrainGenManager.metaAcaciaWood);
+                        this.setTypeAndData((org.bukkit.BlockChangeDelegate)var1, var3, var4 + var10, var5, TerrainGenManager.blockAcaciaWood.id, TerrainGenManager.metaAcaciaWood);
                     }
                 }
 

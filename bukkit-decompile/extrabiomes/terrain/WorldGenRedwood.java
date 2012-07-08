@@ -96,10 +96,10 @@ public class WorldGenRedwood extends WorldGenerator
 
                             if ((Math.abs(var17) != var11 || Math.abs(var19) != var11 || var11 <= 0) && (var20 == null || var20.canBeReplacedByLeaves(var1, var16, var15, var18)))
                             {
-                                this.setTypeAndData(var1, var16, var15, var18, this.blockLeaf, this.metaLeaf);
-                                this.setTypeAndData(var1, var16 - 1, var15, var18, this.blockLeaf, this.metaLeaf);
-                                this.setTypeAndData(var1, var16, var15, var18 - 1, this.blockLeaf, this.metaLeaf);
-                                this.setTypeAndData(var1, var16 - 1, var15, var18 - 1, this.blockLeaf, this.metaLeaf);
+                                this.setTypeAndData((org.bukkit.BlockChangeDelegate)var1, var16, var15, var18, this.blockLeaf, this.metaLeaf);
+                                this.setTypeAndData((org.bukkit.BlockChangeDelegate)var1, var16 - 1, var15, var18, this.blockLeaf, this.metaLeaf);
+                                this.setTypeAndData((org.bukkit.BlockChangeDelegate)var1, var16, var15, var18 - 1, this.blockLeaf, this.metaLeaf);
+                                this.setTypeAndData((org.bukkit.BlockChangeDelegate)var1, var16 - 1, var15, var18 - 1, this.blockLeaf, this.metaLeaf);
                             }
                         }
                     }
@@ -129,11 +129,11 @@ public class WorldGenRedwood extends WorldGenerator
 
                     if (Block.byId[var16] == null || Block.byId[var16].isLeaves(var1, var3, var4 + var15, var5))
                     {
-                        this.setTypeAndData(var1, var3, var4 + var15, var5, this.blockWood, this.metaWood);
-                        this.setTypeAndData(var1, var3, var4 + var15, var5, this.blockWood, this.metaWood);
-                        this.setTypeAndData(var1, var3 - 1, var4 + var15, var5, this.blockWood, this.metaWood);
-                        this.setTypeAndData(var1, var3, var4 + var15, var5 - 1, this.blockWood, this.metaWood);
-                        this.setTypeAndData(var1, var3 - 1, var4 + var15, var5 - 1, this.blockWood, this.metaWood);
+                        this.setTypeAndData((org.bukkit.BlockChangeDelegate)var1, var3, var4 + var15, var5, this.blockWood, this.metaWood);
+                        this.setTypeAndData((org.bukkit.BlockChangeDelegate)var1, var3, var4 + var15, var5, this.blockWood, this.metaWood);
+                        this.setTypeAndData((org.bukkit.BlockChangeDelegate)var1, var3 - 1, var4 + var15, var5, this.blockWood, this.metaWood);
+                        this.setTypeAndData((org.bukkit.BlockChangeDelegate)var1, var3, var4 + var15, var5 - 1, this.blockWood, this.metaWood);
+                        this.setTypeAndData((org.bukkit.BlockChangeDelegate)var1, var3 - 1, var4 + var15, var5 - 1, this.blockWood, this.metaWood);
                     }
                 }
 

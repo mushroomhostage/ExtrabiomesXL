@@ -28,9 +28,9 @@ public class BiomeRainforest extends ExtrabiomeGenBase
         return (new CustomBiomeDecorator.Builder(this)).treesPerChunk(7).grassPerChunk(4).flowersPerChunk(2).build();
     }
 
-    public WorldGenerator func_48440_b(Random var1)
+    public WorldGenerator b(Random var1)
     {
-        return (WorldGenerator)(var1.nextInt(4) == 0 ? new WorldGenGrass(Block.LONG_GRASS.id, 2) : super.func_48440_b(var1));
+        return (WorldGenerator)(var1.nextInt(4) == 0 ? new WorldGenGrass(Block.LONG_GRASS.id, 2) : super.b(var1));
     }
 
     /**

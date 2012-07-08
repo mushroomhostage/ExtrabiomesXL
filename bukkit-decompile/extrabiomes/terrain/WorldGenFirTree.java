@@ -91,7 +91,7 @@ public class WorldGenFirTree extends WorldGenerator
 
                             if ((Math.abs(var16) != var10 || Math.abs(var18) != var10 || var10 <= 0) && (var19 == null || var19.canBeReplacedByLeaves(var1, var15, var14, var17)))
                             {
-                                this.setTypeAndData(var1, var15, var14, var17, this.blockLeaf, this.metaLeaf);
+                                this.setTypeAndData((org.bukkit.BlockChangeDelegate)var1, var15, var14, var17, this.blockLeaf, this.metaLeaf);
                             }
                         }
                     }
@@ -121,7 +121,7 @@ public class WorldGenFirTree extends WorldGenerator
 
                     if (Block.byId[var15] == null || Block.byId[var15].isLeaves(var1, var3, var4 + var14, var5))
                     {
-                        this.setTypeAndData(var1, var3, var4 + var14, var5, this.blockWood, this.metaWood);
+                        this.setTypeAndData((org.bukkit.BlockChangeDelegate)var1, var3, var4 + var14, var5, this.blockWood, this.metaWood);
                     }
                 }
 

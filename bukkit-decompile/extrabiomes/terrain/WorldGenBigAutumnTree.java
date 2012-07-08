@@ -302,7 +302,7 @@ public class WorldGenBigAutumnTree extends WorldGenerator
                     }
                     else
                     {
-                        this.setTypeAndData(this.worldObj, var9[0], var9[1], var9[2], this.leaf.getItem().id, this.leaf.getData());
+                        this.setTypeAndData((org.bukkit.BlockChangeDelegate)this.worldObj, var9[0], var9[1], var9[2], this.leaf.getItem().id, this.leaf.getData());
                         ++var11;
                     }
                 }
@@ -395,7 +395,7 @@ public class WorldGenBigAutumnTree extends WorldGenerator
 
                 if (var16 == null || var16.isLeaves(this.worldObj, var13[0], var13[1], var13[2]))
                 {
-                    this.setTypeAndData(this.worldObj, var13[0], var13[1], var13[2], this.wood.getItem().id, this.wood.getData());
+                    this.setTypeAndData((org.bukkit.BlockChangeDelegate)this.worldObj, var13[0], var13[1], var13[2], this.wood.getItem().id, this.wood.getData());
                 }
             }
         }

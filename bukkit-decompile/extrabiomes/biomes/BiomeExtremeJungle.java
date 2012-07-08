@@ -52,7 +52,7 @@ public class BiomeExtremeJungle extends ExtrabiomeGenBase
         return (new CustomBiomeDecorator.Builder(this)).treesPerChunk(50).grassPerChunk(25).flowersPerChunk(4).build();
     }
 
-    public WorldGenerator func_48440_b(Random var1)
+    public WorldGenerator b(Random var1)
     {
         return var1.nextInt(4) == 0 ? new WorldGenGrass(Block.LONG_GRASS.id, 2) : new WorldGenGrass(Block.LONG_GRASS.id, 1);
     }

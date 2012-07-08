@@ -24,7 +24,7 @@ public class TerrainGenerator
 
     public static void generateSurface(World var0, Random var1, int var2, int var3)
     {
-        BiomeBase var4 = var0.getWorldChunkManager().a(var2, var3);
+        BiomeBase var4 = var0.getWorldChunkManager().getBiome(var2, var3);
         Collection var5 = (Collection)BiomeDecorationsManager.biomeDecorations.get(var4);
         applyDecorations(var5, var0, var1, var2, var3);
 

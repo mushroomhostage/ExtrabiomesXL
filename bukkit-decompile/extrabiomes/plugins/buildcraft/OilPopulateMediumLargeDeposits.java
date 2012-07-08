@@ -14,7 +14,7 @@ public class OilPopulateMediumLargeDeposits extends OilPopulate implements IBiom
     {
         if (PluginBuildCraft.modifyWorld)
         {
-            BiomeBase var5 = var1.getWorldChunkManager().a(var3, var4);
+            BiomeBase var5 = var1.getWorldChunkManager().getBiome(var3, var4);
             boolean var6 = var2.nextDouble() <= 0.0015D;
             boolean var7 = var2.nextDouble() <= (var5.id != BiomeManager.wasteland.id ? 0.005D : 0.02D) / 100.0D;
 

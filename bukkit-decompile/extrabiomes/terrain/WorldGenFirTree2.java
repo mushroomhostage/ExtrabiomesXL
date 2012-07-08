@@ -143,10 +143,10 @@ public class WorldGenFirTree2 extends WorldGenerator
 
                     if (Block.byId[var16] == null || Block.byId[var16].isLeaves(var1, var3, var4 + var15, var5))
                     {
-                        this.setTypeAndData(var1, var3, var4 + var15, var5, this.blockWood, this.metaWood);
-                        this.setTypeAndData(var1, var3 - 1, var4 + var15, var5, this.blockWood, this.metaWood);
-                        this.setTypeAndData(var1, var3, var4 + var15, var5 - 1, this.blockWood, this.metaWood);
-                        this.setTypeAndData(var1, var3 - 1, var4 + var15, var5 - 1, this.blockWood, this.metaWood);
+                        this.setTypeAndData((org.bukkit.BlockChangeDelegate)var1, var3, var4 + var15, var5, this.blockWood, this.metaWood);
+                        this.setTypeAndData((org.bukkit.BlockChangeDelegate)var1, var3 - 1, var4 + var15, var5, this.blockWood, this.metaWood);
+                        this.setTypeAndData((org.bukkit.BlockChangeDelegate)var1, var3, var4 + var15, var5 - 1, this.blockWood, this.metaWood);
+                        this.setTypeAndData((org.bukkit.BlockChangeDelegate)var1, var3 - 1, var4 + var15, var5 - 1, this.blockWood, this.metaWood);
                     }
                 }
 
